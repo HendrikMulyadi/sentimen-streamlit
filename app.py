@@ -1,3 +1,5 @@
+import nltk
+nltk.download('stopwords')
 import streamlit as st
 import pickle
 import re
@@ -38,3 +40,4 @@ if st.button("Prediksi Sentimen"):
             st.success("✅ Sentimen POSITIF")
         else:
             st.error("❌ Sentimen NEGATIF")
+
